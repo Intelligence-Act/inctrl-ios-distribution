@@ -46,11 +46,13 @@ AltServer is the helper that installs apps onto your iPhone.
 
 ## Step 4 — Add the inctrl.ai source and install
 
-**Easiest (on the iPhone, after AltStore is installed):** tap this one-tap link — it opens AltStore and adds the source for you:
+**Easiest (on the iPhone, after AltStore is installed):** scan the QR code below, or open this link **on the phone itself** so it can hand off to AltStore:
 
-> **[Add inctrl.ai source to AltStore](altstore://source?url=https://raw.githubusercontent.com/Intelligence-Act/inctrl-ios-distribution/main/apps.json)**
+`altstore://source?url=https://raw.githubusercontent.com/Intelligence-Act/inctrl-ios-distribution/main/apps.json`
 
-Or scan this QR code **with the AltStore app already installed** (it deep-links into AltStore — it won't work as a plain camera scan before AltStore exists):
+> ⚠️ That `altstore://` link is **not clickable here on GitHub** (GitHub blocks app links). To use it as a tap-link, you must put it somewhere that allows app links (e.g. a notes app or your own web page). The QR code below already works as-is, and the manual steps always work.
+
+Scan this QR code **with the AltStore app already installed** (it deep-links into AltStore — it won't do anything useful as a plain camera scan before AltStore exists):
 
 ![Add source to AltStore QR code](https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=altstore%3A%2F%2Fsource%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FIntelligence-Act%2Finctrl-ios-distribution%2Fmain%2Fapps.json)
 
@@ -85,7 +87,7 @@ If the app ever won't open (you've been away from your computer for over a week)
 ## Good to know
 
 - **3-app limit:** Apple allows only 3 apps installed this way per Apple ID (AltStore itself counts as one).
-- **Your Apple ID is safe:** it's sent directly to Apple, not stored by AltStore. Using a spare Apple ID is still recommended.
+- **Your Apple ID is safe:** it's sent directly to Apple, not stored by AltStore. Your existing Apple ID is fine to use.
 - **Updates:** when a new version of inctrl.ai is released, AltStore shows an update badge — just tap to update.
 
 ---
@@ -96,5 +98,5 @@ If the app ever won't open (you've been away from your computer for over a week)
 |---|---|
 | "Unable to verify app" / "could not verify free of malware" | Connect the iPhone to Wi-Fi, then redo the **Trust** step (Step 3). |
 | App won't open after a week | Refresh it (see *Keeping the app working* above). |
-| Apple ID password rejected | Use an **app-specific password** (Step 2.5). |
+| Apple ID password rejected | Use your **regular password** + the **6-digit code** (Step 2.5) — *not* an app-specific password. If it's a brand-new Apple ID, sign into iCloud with it once first. |
 | "Developer Mode" not visible | Only on iOS 16+. On older iOS it isn't needed — just do the Trust step. |
