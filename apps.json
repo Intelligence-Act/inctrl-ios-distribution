@@ -1,14 +1,14 @@
 {
   "name": "inctrl.ai",
   "identifier": "com.intelactsoft.inctrlai.source",
-  "sourceURL": "https://intelligence-act.github.io/inctrl-ios-distribution/apps.json",
+  "sourceURL": "https://raw.githubusercontent.com/Intelligence-Act/inctrl-ios-distribution/main/apps.json",
   "apps": [
     {
       "name": "inctrl.ai",
       "bundleIdentifier": "com.intelactsoft.inctrlai",
       "developerName": "Intelligence Act",
       "localizedDescription": "inctrl.ai — manage your work profile.",
-      "iconURL": "https://intelligence-act.github.io/inctrl-ios-distribution/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/Intelligence-Act/inctrl-ios-distribution/main/icon.png",
       "versions": [
         {
           "version": "1.0.0",
