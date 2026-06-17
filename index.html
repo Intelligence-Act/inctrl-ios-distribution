@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Install inctrl.ai on your iPhone</title>
+<meta name="description" content="Step-by-step guide to install the inctrl.ai app on iPhone via AltStore.">
+<style>
+  :root {
+    --navy: #0f265c;
+    --navy-dark: #060039;
+    --magenta: #e5005b;
+    --gold: #ffb017;
+    --blue-50: #e7f0f6;
+    --blue-100: #cfdeea;
+    --blue-200: #c4d8e5;
+    --muted: #969ec0;
+    --page: #f8f9fb;
+    --ink: #212529;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--page);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+
+  header {
+    background: linear-gradient(150deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: #fff;
+    padding: 48px 20px 56px;
+    text-align: center;
+  }
+  header .badge {
+    width: 84px; height: 84px; border-radius: 20px;
+    background: #fff; margin: 0 auto 20px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    overflow: hidden;
+  }
+  header .badge img { width: 100%; height: 100%; object-fit: cover; }
+  header h1 { margin: 0 0 8px; font-size: 1.9rem; letter-spacing: -.02em; }
+  header p { margin: 0; color: var(--blue-100); font-size: 1.05rem; }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--blue-100);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 22px 0;
+    box-shadow: 0 2px 10px rgba(15,38,92,.04);
+  }
+
+  .callout {
+    background: var(--blue-50);
+    border-left: 4px solid var(--navy);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 22px 0;
+  }
+  .callout.warn { background: #fff7e6; border-left-color: var(--gold); }
+  .callout strong { color: var(--navy); }
+
+  h2 {
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin: 40px 0 4px;
+    letter-spacing: -.01em;
+  }
+  .step-tag {
+    display: inline-block;
+    font-size: .75rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--magenta);
+    margin-top: 30px;
+  }
+  h2.with-tag { margin-top: 2px; }
+
+  ul, ol { padding-left: 22px; }
+  li { margin: 6px 0; }
+
+  code, .mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em;
+    background: var(--blue-50);
+    color: var(--navy);
+    padding: 2px 6px;
+    border-radius: 6px;
+    word-break: break-all;
+  }
+  .urlbox {
+    display: block;
+    background: var(--navy);
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .82rem;
+    word-break: break-all;
+    margin: 12px 0;
+  }
+
+  .cta {
+    display: block;
+    text-align: center;
+    background: var(--magenta);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin: 8px 0 6px;
+    box-shadow: 0 6px 18px rgba(229,0,91,.3);
+    transition: transform .08s ease;
+  }
+  .cta:active { transform: scale(.98); }
+  .cta small { display: block; font-weight: 500; font-size: .8rem; opacity: .9; margin-top: 2px; }
+
+  .qr { text-align: center; margin: 18px 0; }
+  .qr img {
+    width: 200px; height: 200px;
+    border: 8px solid #fff; border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(15,38,92,.12);
+  }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--blue-100); vertical-align: top; }
+  th { background: var(--blue-50); color: var(--navy); }
+
+  .pill { display:inline-block; background:var(--gold); color:var(--navy-dark); font-weight:700; font-size:.72rem; padding:2px 9px; border-radius:999px; vertical-align: middle; }
+
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 30px 20px; }
+  a { color: var(--magenta); }
+  hr { border: none; border-top: 1px solid var(--blue-100); margin: 36px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge"><img src="icon.png" alt="inctrl.ai icon"></div>
+  <h1>Install inctrl.ai on your iPhone</h1>
+  <p>A step-by-step guide &middot; about 15 minutes the first time</p>
+</header>
+
+<div class="wrap">
+
+  <div class="callout warn">
+    <strong>Before you start — two things to know:</strong>
+    <ul style="margin:8px 0 0;">
+      <li>You need a <strong>computer (Mac or Windows)</strong> you can keep turned on. It's required to install the app <em>and</em> to keep it working.</li>
+      <li>The app must be <strong>refreshed every 7 days</strong> (the computer does this automatically while it's on and near your phone). This is an Apple rule for apps installed outside the App Store — there's no way around it.</li>
+    </ul>
+  </div>
+
+  <h2>What you need</h2>
+  <div class="card">
+    <ul style="margin:0;">
+      <li>An iPhone</li>
+      <li>A Mac or Windows computer</li>
+      <li>An <strong>Apple ID</strong> — your existing one is fine. You can also create a free Apple ID just for AltStore if you'd rather not use your main account; for a single app it makes no real difference.</li>
+      <li>A USB cable</li>
+      <li>The iPhone and computer on the <strong>same Wi-Fi network</strong></li>
+    </ul>
+  </div>
+
+  <span class="step-tag">Step 1</span>
+  <h2 class="with-tag">Install AltServer on your computer</h2>
+  <div class="card">
+    <p style="margin-top:0;">AltServer is the helper that installs apps onto your iPhone.</p>
+    <ol>
+      <li>Go to <a href="https://altstore.io">altstore.io</a> and download <strong>AltServer</strong> (for <strong>AltStore Classic</strong> — the free version). Do <strong>not</strong> get <em>AltStore PAL</em>; that's a separate paid EU-marketplace app and won't work with this guide.</li>
+      <li><strong>Windows only:</strong> also install <strong>iTunes</strong> and <strong>iCloud</strong> from Apple's website directly — <em>not</em> from the Microsoft Store (the Store versions don't work).</li>
+      <li>Open AltServer. It runs quietly in the <strong>system tray</strong> (Windows) or <strong>menu bar</strong> (Mac).</li>
+    </ol>
+  </div>
+
+  <span class="step-tag">Step 2</span>
+  <h2 class="with-tag">Install the AltStore app on your iPhone</h2>
+  <div class="card">
+    <ol>
+      <li>Plug your iPhone into the computer with the USB cable.</li>
+      <li>Unlock the iPhone and tap <strong>Trust This Computer</strong> (enter your passcode).</li>
+      <li>Turn on Wi-Fi sync for the device, so AltServer can refresh it wirelessly later:
+        <ul>
+          <li><strong>Mac (macOS 10.15+):</strong> open <strong>Finder</strong>, select your iPhone, and check <strong>"Show this iPhone when on Wi-Fi."</strong></li>
+          <li><strong>Windows (or older macOS):</strong> open <strong>iTunes</strong>, select your iPhone &rarr; <strong>Summary</strong>, and check <strong>"Sync with this iPhone over Wi-Fi."</strong></li>
+        </ul>
+      </li>
+      <li>Click the <strong>AltServer icon</strong> (tray/menu bar) &rarr; <strong>Install AltStore</strong> &rarr; choose your iPhone.</li>
+      <li>Enter your <strong>Apple ID</strong> and your <strong>regular password</strong> when asked.
+        <ul>
+          <li>If two-factor authentication is on, AltServer then asks for the <strong>6-digit verification code</strong> shown on your Apple devices — enter it.</li>
+          <li>If instead you get an error that an <strong>app-specific password is required</strong>, create one at <a href="https://account.apple.com">account.apple.com</a> &rarr; <em>Sign-In &amp; Security &rarr; App-Specific Passwords</em>, and use that in the password field.</li>
+        </ul>
+      </li>
+      <li>After ~30 seconds, <strong>AltStore</strong> appears on your home screen.</li>
+    </ol>
+  </div>
+
+  <span class="step-tag">Step 3</span>
+  <h2 class="with-tag">Trust the app on your iPhone</h2>
+  <div class="card">
+    <ol>
+      <li>Go to <strong>Settings &rarr; General &rarr; VPN &amp; Device Management</strong>.</li>
+      <li>Under <strong>Developer App</strong>, tap your <strong>Apple ID</strong> &rarr; tap <strong>Trust</strong> &rarr; confirm. <em>(Your iPhone must be connected to the internet for this to work.)</em></li>
+      <li><strong>iPhone on iOS 16 or newer:</strong> go to <strong>Settings &rarr; Privacy &amp; Security &rarr; Developer Mode</strong>, turn it <strong>On</strong>, and restart when prompted.</li>
+    </ol>
+  </div>
+
+  <span class="step-tag">Step 4</span>
+  <h2 class="with-tag">Add the inctrl.ai source &amp; install</h2>
+  <div class="card">
+    <p style="margin-top:0;"><strong>Easiest — on your iPhone, with AltStore already installed:</strong> tap the button below. It opens AltStore and adds the source automatically.</p>
+
+    <a class="cta" href="altstore://source?url=https://raw.githubusercontent.com/Intelligence-Act/inctrl-ios-distribution/main/apps.json">
+      Add inctrl.ai to AltStore
+      <small>Tap this on your iPhone (AltStore must be installed first)</small>
+    </a>
+
+    <p style="text-align:center; margin: 18px 0 6px; color: var(--muted);">— or scan this with the iPhone that has AltStore installed —</p>
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=altstore%3A%2F%2Fsource%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2FIntelligence-Act%2Finctrl-ios-distribution%2Fmain%2Fapps.json" alt="QR code to add inctrl.ai source to AltStore">
+    </div>
+
+    <p><strong>Or add it manually:</strong></p>
+    <ol>
+      <li>Open <strong>AltStore</strong> &rarr; <strong>Browse</strong> tab &rarr; tap <strong>Sources</strong> (top-right) &rarr; tap <strong>+</strong>.</li>
+      <li>Paste this source address and tap <strong>Add Source</strong>:
+        <span class="urlbox">https://raw.githubusercontent.com/Intelligence-Act/inctrl-ios-distribution/main/apps.json</span>
+      </li>
+      <li><strong>inctrl.ai</strong> now appears in the Browse tab &rarr; tap <strong>Install</strong>.</li>
+      <li>Tap the <strong>inctrl.ai</strong> icon on your home screen to open it. 🎉</li>
+    </ol>
+  </div>
+
+  <hr>
+
+  <h2>Keeping the app working <span class="pill">7-day refresh</span></h2>
+  <div class="card">
+    <p style="margin-top:0;">The app stops opening after 7 days unless it's refreshed. To keep it working automatically:</p>
+    <ul>
+      <li><strong>Leave AltServer running</strong> on your computer (set it to launch at startup).</li>
+      <li>Keep your <strong>iPhone on the same Wi-Fi</strong> as the computer. AltStore refreshes the app in the background.</li>
+    </ul>
+    <p>If the app ever won't open (you've been away from your computer for over a week):</p>
+    <ol>
+      <li>Make sure AltServer is running and your iPhone is on the same Wi-Fi (or plug in via USB).</li>
+      <li>Open <strong>AltStore &rarr; My Apps &rarr; Refresh All</strong>.</li>
+    </ol>
+  </div>
+
+  <h2>Good to know</h2>
+  <div class="card">
+    <ul style="margin:0;">
+      <li><strong>3-app limit:</strong> Apple allows only 3 apps installed this way at a time (AltStore itself is one of them).</li>
+      <li><strong>Your Apple ID is safe:</strong> it's sent only to Apple — not stored by AltStore.</li>
+      <li><strong>Updates:</strong> when a new version is released, AltStore shows an update badge — just tap to update.</li>
+    </ul>
+  </div>
+
+  <h2>Trouble?</h2>
+  <div class="card" style="padding:6px 10px;">
+    <table>
+      <tr><th>Problem</th><th>Fix</th></tr>
+      <tr><td>"Unable to verify app" / "could not verify free of malware"</td><td>Connect the iPhone to Wi-Fi, then redo the <strong>Trust</strong> step (Step 3).</td></tr>
+      <tr><td>App won't open after a week</td><td>Refresh it (see <em>Keeping the app working</em> above).</td></tr>
+      <tr><td>Apple ID password rejected</td><td>Use your <strong>regular password</strong> + the <strong>6-digit code</strong>. If you get an "app-specific password required" error, create one at <a href="https://account.apple.com">account.apple.com</a> and use that.</td></tr>
+      <tr><td>"Developer Mode" not visible</td><td>Only on iOS 16+. On older iOS it isn't needed — just do the Trust step.</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  inctrl.ai &middot; iOS sideload distribution
+</footer>
+
+</body>
+</html>
