@@ -12,7 +12,7 @@ This guide walks you through installing **inctrl.ai** on an iPhone. The whole th
 
 - An iPhone
 - A Mac or Windows computer
-- An **Apple ID** — your existing one is fine. (If you'd rather not use your main account you can use a spare, but for installing a single app it makes no real difference. If you do make a new Apple ID, sign into iCloud with it once first, or AltStore may reject it.)
+- An **Apple ID** — your existing one is fine. You can also create a free Apple ID just for AltStore if you'd rather not use your main account; for installing a single app it makes no real difference.
 - A USB cable
 - Both the iPhone and computer on the **same Wi-Fi network**
 
@@ -30,11 +30,13 @@ AltServer is the helper that installs apps onto your iPhone.
 
 1. Plug your iPhone into the computer with the USB cable.
 2. Unlock the iPhone and tap **Trust This Computer** (enter your passcode).
-3. In **Finder** (Mac) or **iTunes** (Windows), turn on **"Sync this iPhone over Wi-Fi."**
+3. Turn on Wi-Fi sync for the device, so AltServer can refresh it wirelessly later:
+   - **Mac (macOS Catalina/10.15 or newer):** open **Finder**, select your iPhone, and check **"Show this iPhone when on Wi-Fi."**
+   - **Windows (or older macOS):** open **iTunes**, select your iPhone → **Summary**, and check **"Sync with this iPhone over Wi-Fi."**
 4. Click the **AltServer icon** (tray/menu bar) → **Install AltStore** → choose your iPhone.
 5. Enter your **Apple ID** and your **regular password** when asked.
-   - If two-factor authentication is on, AltServer then asks for the **6-digit verification code** that pops up on your Apple devices — enter it. (Do **not** use an app-specific password; AltStore no longer accepts them.)
-   - Tip: if this Apple ID is the same one signed into iCloud on this computer, you won't be asked for a code at all.
+   - If two-factor authentication is on, AltServer then asks for the **6-digit verification code** shown on your Apple devices — enter it.
+   - If instead you get an error that an **app-specific password is required**, create one at [account.apple.com](https://account.apple.com) → *Sign-In & Security → App-Specific Passwords*, and use that in the password field.
 6. After ~30 seconds, **AltStore** appears on your home screen.
 
 ## Step 3 — Trust the app on your iPhone
@@ -98,5 +100,5 @@ If the app ever won't open (you've been away from your computer for over a week)
 |---|---|
 | "Unable to verify app" / "could not verify free of malware" | Connect the iPhone to Wi-Fi, then redo the **Trust** step (Step 3). |
 | App won't open after a week | Refresh it (see *Keeping the app working* above). |
-| Apple ID password rejected | Use your **regular password** + the **6-digit code** (Step 2.5) — *not* an app-specific password. If it's a brand-new Apple ID, sign into iCloud with it once first. |
+| Apple ID password rejected | Use your **regular password** + the **6-digit code** (Step 2.5). If you get an *"app-specific password required"* error, create one at [account.apple.com](https://account.apple.com) and use that instead. |
 | "Developer Mode" not visible | Only on iOS 16+. On older iOS it isn't needed — just do the Trust step. |
